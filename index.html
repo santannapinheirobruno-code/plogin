@@ -24,9 +24,31 @@
     }
     .img{height: 70%; width: 35%; background-color: rgb(255, 255, 255); border-bottom-left-radius: 100px; border-top-left-radius: 100px;}
     .form{height: 70%; width: 35%; background-color: rgb(223, 137, 8); border-bottom-right-radius: 100px;border-top-right-radius: 100px;display: flex; align-items: center; justify-content: center; flex-direction: column;}
-    .form p{
-      font-size: 180%;
+    .form p{font-size: 180%;}
+    .form .parte1{
+      
+      height: 30%;
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 4rem;
     }
+    .form .parte2{
+      
+      height: 30%;
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 4rem;
+    }
+    input[type="submit"]{
+      padding: 0;
+    }
+    input{border: none; border-radius: 10px; height: 3rem; width: 70%;padding-left: 1rem;}
   </style>
 </head>
 
@@ -36,9 +58,13 @@
     <img class="img" src="https://i.pinimg.com/736x/75/7b/86/757b86405a36a716f5c2714ef47bed02.jpg">
     <form class="form">
       <p>Entre com sua Conta</p>
-      <label for="email">Email ou nome de usuário</label>
-      <input type="text" name="email" id="" placeholder="email ou nome de usuário">
+      <div class="parte1"><label for="email">Usuário</label>
+      <input type="text" name="email" id="" placeholder="email ou nome de usuário"></div>
+      <div class="parte2"><label for="password">Senha</label>
+      <input type="password" name="password" id="" placeholder="email ou nome de usuário"></div>
+      <input type="submit" style="height: 2rem; width: 30%;">
     </form>
+
   </div>
 </body>
 
