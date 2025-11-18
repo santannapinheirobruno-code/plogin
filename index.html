@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tela de Login</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      background:linear-gradient(red, orange);
+      height: 99vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: helvetica;
+      font-weight: 700; 
+      color: white;
+    }
+    .img{height: 70%; width: 35%; background-color: rgb(255, 255, 255); border-bottom-left-radius: 100px; border-top-left-radius: 100px;}
+    .form{height: 70%; width: 35%; background-color: rgb(223, 137, 8); border-bottom-right-radius: 100px;border-top-right-radius: 100px;display: flex; align-items: center; justify-content: center; flex-direction: column;}
+    .form p{
+      font-size: 180%;
+    }
+  </style>
 </head>
+
 <body>
+
   <div class="container">
-    <div class="form">
+    <img class="img" src="https://i.pinimg.com/736x/75/7b/86/757b86405a36a716f5c2714ef47bed02.jpg">
+    <form class="form">
       <p>Entre com sua Conta</p>
-    </div>
+      <label for="email">Email ou nome de usuário</label>
+      <input type="text" name="email" id="" placeholder="email ou nome de usuário">
+    </form>
   </div>
 </body>
+
 </html>
